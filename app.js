@@ -72,7 +72,6 @@ app.get("/",function(req,res){
     //this is how we contacts different functions in the same page
 
     let day=date.getdate();
-    //ye dehkho yaha pr () ye laga diye to ab function run ho rha haai aur value de rha hai
 
     res.render("list",{
         listtitle: day,
