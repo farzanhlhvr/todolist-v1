@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+    <div class="box" id="heading">
+        <h1><%= listtitle %></h1>
+    </div>
+
+    <div class="box">
+        <% for(var i=0;i<newlistitem.length;i++){ %>
+            
+            <!-- checkbox aise lagate hai -->
+            <div class="item">
+                <input type="checkbox">
+                <p><%= newlistitem[i] %></p>
+            </div>
+
+        <% } %>
+
+        <form class="item" action="/" method="post">
+            <!-- autocomplete="off" ka mtlb hota hai ki jo phle search kiya hai unhe na dihkhae -->
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" value=<%= listtitle %>>+</button>
+        </form>
+    </div>
+
+<%- include("footer") -%>    
+
+<!-- 21.8 se -->
