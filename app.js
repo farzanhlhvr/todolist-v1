@@ -24,9 +24,6 @@ app.get("/",function(req,res){
 
 app.post("/",function(req,res){
     let item=req.body.newItem;
-    //ye jo item variable hai iska use app.get main use hai lekin vaha pe item undefined 
-    //dihkha dega issi liye var item ko uppar globally define kr diya hai
- 
     if(req.body.list==="Work")
     {
         workitem.push(item);
