@@ -1,8 +1,6 @@
-
 module.exports.getdate=getdate;
 
 function getdate(){
-
     let today=new Date();
  
     let options={
